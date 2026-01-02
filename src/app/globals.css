@@ -66,3 +66,25 @@ body {
 .book-open {
   transform: rotateY(-22deg) translateZ(2px);
 }
+
+.trail-img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.dot-grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 22px;
+  width: fit-content;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  transform: scale(1);
+  will-change: transform;
+}
